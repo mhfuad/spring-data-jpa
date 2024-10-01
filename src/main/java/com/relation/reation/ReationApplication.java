@@ -20,7 +20,7 @@ public class ReationApplication {
 		SpringApplication.run(ReationApplication.class, args);
 	}
 
-	//@Bean
+	@Bean
 	public CommandLineRunner commandLineRunner(
 		AuthorRepository authorRepository,
 		MenuRepository menuRepository
@@ -33,6 +33,7 @@ public class ReationApplication {
 			// .email("fuad@gmail.com")
 			// .build();
 			// authorRepository.save(author);
+			
 			var parent = Menu.builder()
 			.name("fuad")
 			.build();

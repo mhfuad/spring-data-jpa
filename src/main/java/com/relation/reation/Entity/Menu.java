@@ -32,7 +32,7 @@ public class Menu {
     private Long id;
     private String name;
     
-    @OneToMany(mappedBy = "parentMenu", cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToMany(mappedBy = "parentMenu", cascade = CascadeType.ALL)
     private List<Menu> subMenus;
 
     @ManyToOne
